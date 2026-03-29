@@ -1,4 +1,4 @@
-package stepDefinations;
+package org.myproject;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Transpose;

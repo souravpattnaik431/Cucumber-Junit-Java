@@ -1,4 +1,4 @@
-package org.example;
+package org.myproject;
 
 /**
  * Hello world!
@@ -6,7 +6,7 @@ package org.example;
  */
 public class App 
 {
-    public static void main( String[] args )
+    static void main()
     {
         System.out.println( "Hello World!" );
     }

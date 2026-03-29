@@ -1,4 +1,4 @@
-package cucumberOptions;
+package org.myproject;
 
 
 import org.junit.platform.suite.api.ConfigurationParameter;
@@ -11,9 +11,9 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectPackages("src/test/java/stepDefinations")
+@SelectPackages("org.myproject")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "html:target/report.html")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "src/test/java/stepDefinations")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.myproject")
 public class TestRunnerTest {
 
     //tags = "not @SmokeTest or @CardTest"
