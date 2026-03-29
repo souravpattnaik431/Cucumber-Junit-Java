@@ -66,7 +66,7 @@ public class StepDefinition {
         // Write code here that turns the phrase above into concrete actions
         IO.println("Transaction performed for axis bank");
     }
-    @When("User selects HDFC bak")
+    @When("User selects HDFC bank")
     public void user_selects_hdfc_bak() {
         // Write code here that turns the phrase above into concrete actions
         IO.println("User selects HDFC bank");
