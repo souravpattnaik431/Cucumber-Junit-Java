@@ -14,7 +14,7 @@ Feature: Application login with Rule
   @RegressionTest
   Scenario: Home page valid login with rule 1
     Given  User is on landing page
-    * user having valid creditials
+    * user having valid credentials
     * user having credit card
     When User login with username "user8" and password "pwd8"
     Then Home page is displayed "true"

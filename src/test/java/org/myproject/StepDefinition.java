@@ -8,7 +8,7 @@ import objects.Application;
 
 import java.util.List;
 
-public class StepDefination {
+public class StepDefinition {
 
 
     @When("User login with username {string} and password {string}")
@@ -38,11 +38,11 @@ public class StepDefination {
         //
         // For other transformations you can register a DataTableType.
         List<List<String>> dataValues= dataTable.asLists();
-        System.out.println(dataValues.get(0).get(0));
-        System.out.println(dataValues.get(0).get(1));
-        System.out.println(dataValues.get(0).get(2));
-        System.out.println(dataValues.get(0).get(3));
-        System.out.println(dataValues.get(0).get(4));
+        System.out.println(dataValues.getFirst().getFirst());
+        System.out.println(dataValues.getFirst().get(1));
+        System.out.println(dataValues.getFirst().get(2));
+        System.out.println(dataValues.getFirst().get(3));
+        System.out.println(dataValues.getFirst().get(4));
     }
 
     @When("User login with username {string} and password {string} parameters")
@@ -51,10 +51,10 @@ public class StepDefination {
         System.out.println("User login with "+userName+" and "+passWord);
     }
 
-    @Given("User is on creditcard Page")
-    public void user_is_on_creditcard_page() {
+    @Given("User is on credit card Page")
+    public void user_is_on_creditCard_page() {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("User is on credi card page");
+        System.out.println("User is on credit card page");
     }
     @When("User selects Axis bak")
     public void user_selects_axis_bak() {
@@ -66,21 +66,21 @@ public class StepDefination {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("Transaction performed for axis bank");
     }
-    @When("User selects hdfc bak")
+    @When("User selects HDFC bak")
     public void user_selects_hdfc_bak() {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("User selects hdfc bank");
+        System.out.println("User selects HDFC bank");
     }
-    @Then("Transaction perform successfully for hdfc bank")
+    @Then("Transaction perform successfully for HDFC bank")
     public void transaction_perform_successfully_for_hdfc_bank() {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("Transaction performed for hdfc bank");
+        System.out.println("Transaction performed for HDFC bank");
     }
 
     @Given("User is on System")
     public void user_is_on_system() {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("User is on System");;
+        System.out.println("User is on System");
     }
     @When("User selects browser")
     public void user_selects_browser() {
@@ -104,10 +104,10 @@ public class StepDefination {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("it doesn't get hang");
     }
-    @Given("user having valid creditials")
-    public void user_having_valid_creditials() {
+    @Given("user having valid credentials")
+    public void user_having_valid_credentials() {
         // Write code here that turns the phrase above into concrete actions
-        System.out.println("user having valid creditials");
+        System.out.println("user having valid credentials");
     }
     @Given("user having credit card")
     public void user_having_credit_card() {

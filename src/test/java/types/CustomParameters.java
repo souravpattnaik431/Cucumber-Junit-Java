@@ -1,14 +1,12 @@
 package types;
-
+import module java.base;
 import io.cucumber.java.DataTableType;
 import io.cucumber.java.ParameterType;
 import objects.Application;
 import objects.Customer;
 
-import java.util.List;
-import java.util.Map;
 
-public class customeParameters {
+public class CustomParameters {
 
     @ParameterType(".*")
     public Application application(String applicationType)

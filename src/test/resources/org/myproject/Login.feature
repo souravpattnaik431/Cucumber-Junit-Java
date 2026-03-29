@@ -29,7 +29,7 @@ Feature: Application login
     And Cards are displayed "true"
 
   @SmokeTest
-  Scenario Outline: Home page paramerterized login
+  Scenario Outline: Home page parameterized login
     Given  User is on landing page
     When User login with username "<Username>" and password "<Password>" parameters
     Then Home page is displayed "true"
