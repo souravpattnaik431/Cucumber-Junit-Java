@@ -10,11 +10,6 @@ import java.util.List;
 
 public class StepDefination {
 
-    @Given("User is on <application> page")
-    public void user_is_on_landing_page(Application application) {
-        // Write code here that turns the phrase above into concrete actions
-        System.out.println("User is on page :"+application.getApplicationType());
-    }
 
     @When("User login with username {string} and password {string}")
     public void user_login_with_username_and_password(String userName, String passWord) {
